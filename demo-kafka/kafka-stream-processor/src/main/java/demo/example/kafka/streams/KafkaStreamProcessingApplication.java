@@ -1,0 +1,13 @@
+package demo.example.kafka.streams;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class KafkaStreamProcessingApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(KafkaStreamProcessingApplication.class, args);
+    }
+
+}
