@@ -1,6 +1,7 @@
 package demo.example.kafka.producer;
 
 import demo.example.kafka.producer.service.ProducerService;
+import demo.example.kafka.producer.service.TradeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -12,6 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ProducerApplication implements CommandLineRunner {
     @Autowired
     ProducerService producerService;
+    @Autowired
+    TradeService tradeService;
+
 
 
     public static void main(String[] args) {
@@ -24,7 +28,8 @@ public class ProducerApplication implements CommandLineRunner {
 //        while(true){
 //            Thread.sleep(1000);
             log.info("Sending message counter :{}",count++);
-            producerService.sendMessageToTopic(".//trade1.json");
+//            producerService.sendMessageToTopic(".//trade1.json");
+            tradeService.sendMessageToTopic(".//demo-kafka//trade1.json");
 //        }
     }
 }
