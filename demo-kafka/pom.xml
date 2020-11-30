@@ -11,6 +11,7 @@
         <module>kafka-producer</module>
         <module>kafka-stream-processor</module>
         <module>kafka-consumer</module>
+        <module>kafka-avero</module>
     </modules>
     <packaging>pom</packaging>
 
