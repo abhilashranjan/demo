@@ -11,9 +11,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>binary-search</module>
+        <module>dfs-algo</module>
         <module>string-algo</module>
         <module>stack-algo</module>
+        <module>binary-search-algo</module>
+        <module>subset-algo</module>
     </modules>
 
 
